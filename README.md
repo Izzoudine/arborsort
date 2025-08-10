@@ -15,10 +15,11 @@ Install via pip:
 
 ```bash
 pip install arborsort
+```
 
-## Usage
 
 Run the `classify` command to organize files in a directory:
 
 ```bash
 arborsort classify path/to/your_directory
+```
