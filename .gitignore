@@ -1,0 +1,4 @@
+arborsort/__pycache__/
+.benchmarks/
+.pytest_cache/
+tests/__pycache__/

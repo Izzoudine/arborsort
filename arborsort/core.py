@@ -6,7 +6,16 @@ import os
 class FileOrganizer():
     def __init__(self, directory):
         self.directory = directory
+        if not self.is_folder(directory):
+            raise TypeError("Please provide a folder!")
 
+    def is_folder(self,directory):
+        direct = Path(directory)
+        if direct.is_dir:
+            return True
+        else:
+            return False
+        
     def verify_folders(self, folder_type, is_empty, item, directory):
         if is_empty:
             (directory / folder_type).mkdir(exist_ok=True)
@@ -103,6 +112,7 @@ class FileOrganizer():
                 self.move_file(file, destination)    
 
     def place_file_in_folder(self):
+
         self.create_category_folder()
         try:
             directory = Path(self.directory)
