@@ -4,4 +4,4 @@ arborsort/__pycache__/
 tests/__pycache__/
 arborsort/
 arborsort.egg-info/
-dist/
+dist
